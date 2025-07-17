@@ -4,9 +4,10 @@ Welcome to the **CACI Data Derby**! This project tackles the challenge of predic
 
 At its core is the mathematics of **logistic regression**—a model that estimates probabilities using the **sigmoid function**:
 
-\[
+$$
 \hat{p}(x_i) = \frac{1}{1 + e^{-(\mathbf{w}^\top x_i + b)}}
-\]
+$$
+
 
 This smooth curve, centered on **Euler’s number \( e \)**, transforms any linear combination of features into a probability between 0 and 1, making it ideal for classifying good vs bad wine.
 
@@ -38,15 +39,17 @@ This smooth curve, centered on **Euler’s number \( e \)**, transforms any line
 
 We will use a **logistic regression model**, fit to multiple predictor variables, with the aim of minimizing log-loss on the validation set. The output is interpreted as:
 
-\[
+$$
 \hat{p}(x_i) = \frac{1}{1 + e^{-(\mathbf{w}^\top x_i + b)}}
-\]
+$$
+
 
 The sigmoid function is centered on **Euler's number \( e \)**, transforming a linear combination of input features into a probability between 0 and 1. Wines are then classified as:
 
-\[
+$$
 \text{If } \hat{p}(x_i) \geq 0.5 \Rightarrow \text{Good Wine (1)}, \quad \text{else Bad Wine (0)}
-\]
+$$
+
 
 High-dimensional feature sets are visualized using:
 - **Sigmoid surface plots** (for 2–3 predictors)
